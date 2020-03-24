@@ -1,7 +1,8 @@
 # Mobius-prometheus-service-discovery
 Mobius Prometheus Service Discovery is used as described below to enable Prometheus and Grafana for Metric collection and Dashboard for each resource created via Mobius.
-
+## Dasboard
 ![Monitoring Dashboard](./images/grafana.png)
+## Component Diagram
 ![Monitoring Component Diamggra](./images/monitoring.png)
 
 ## Usage
