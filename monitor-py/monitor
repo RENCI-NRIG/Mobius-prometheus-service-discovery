@@ -1,0 +1,5 @@
+#!/bin/python
+
+from monitor_tools.monitor import main
+
+main()

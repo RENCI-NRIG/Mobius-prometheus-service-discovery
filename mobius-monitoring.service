@@ -1,0 +1,13 @@
+[Unit]
+Description=Monitoring service to update promethius targets on the fly
+After=mobius-monitoring.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/monitord start -k dynamo-broker1.exogeni.net:9092 -t mobius-promeithus
+ExecStop=/usr/bin/monitord stop
+Restart=on-failure
+PIDFile=/var/run/monitor.pid
+
+[Install]
+WantedBy=multi-user.target

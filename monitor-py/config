@@ -1,0 +1,37 @@
+# The config file for the daemon portion of the monitor-tools.
+# After making modifications to this file, please restart monitord to re-read it.
+
+# This file is a sample; to alter a particular value, uncomment it, and set as desired.
+# monitord will use sane defaults, in the absence of this configuration file.
+
+[runtime]
+#
+## The directory into which monitord should write various pieces of state,
+## such as post-boot scripts.
+## This directory will be automatically created if it does not exist.
+#state-directory = /var/lib/monitor
+#
+## The directory into which monitord should write the PID file corresponding to itself.
+## This directory will be automatically created if it does not exist.
+#pid-directory = /var/run
+#
+## The filename to be used for monitord's PID lockfile
+#pid-file = monitor.pid
+
+[logging]
+## The directory in which monitord should create log files.
+## This directory will be automatically created if it does not exist.
+#log-directory = /var/log/monitor
+#
+## The filename to be used for monitord's log file.
+#log-file = monitor.log
+#
+## The default log level for monitord.
+#log-level = DEBUG
+#
+## Neucad rotates log files. You may specify how many archived log files to keep here.
+#log-retain = 5
+#
+## Neucad rotates log files after they exceed a certain size.
+## You may specify the file size that results in a log file being rotated here.
+#log-size = 5000000
